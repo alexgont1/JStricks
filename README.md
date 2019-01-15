@@ -1,0 +1,2 @@
+# JStricks
+experiments with JavaScript
