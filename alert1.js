@@ -1,0 +1,1 @@
+alert( "I'm your 1st JavaScript in special file!" );
