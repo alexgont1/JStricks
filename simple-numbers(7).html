@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<h1>JS: SIMPLE NUMBERS 2-100 </h1>
+
+		<script>
+			var simp; //simple 
+			for (var i = 2; i < 101; i++) {
+				simp = 1;
+			  	for (var j = 2; j < i; j++) {
+			  		if (i % j == 0){
+			  			simp--; //not simple
+			  			break;
+			  		}
+			  	}
+
+			  	(simp == 1) ? document.write(i + "<br>") : '';
+			}
+		</script>
+
+	</body>
+</html>
