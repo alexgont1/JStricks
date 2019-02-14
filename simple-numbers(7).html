@@ -2,11 +2,13 @@
 <html>
 	<body>
 
-		<h1>JS: SIMPLE NUMBERS 2-100 </h1>
+		<h1>JS: SIMPLE NUMBERS 2-... </h1>
 
 		<script>
+			var n = prompt('Choose number > 2', 10);
+			document.write("<h2>Simple number from 2 to " + n + "</h2>");
 			var simp; //simple 
-			for (var i = 2; i < 101; i++) {
+			for (var i = 2; i < n; i++) {
 				simp = 1;
 			  	for (var j = 2; j < i; j++) {
 			  		if (i % j == 0){
