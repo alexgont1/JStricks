@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- add Mocha to show results -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css">
+  <!-- add library Mocha -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
+  <!-- setup Mocha: for BDD-testing -->
+  <script>
+    mocha.setup('bdd');
+  </script>
+
+  <!-- add chai -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script>
+  <!-- chai is very useful, assert for global access -->
+  <script>
+    var assert = chai.assert;
+  </script>
+</head>
+
+<body>
+
+  <script>
+    function pow(x, n) {
+      /* here will be some code */
+    }
+  </script>
+
+  <!-- here are specs -->
+  <script src="test.js"></script>
+
+  <!-- element id="mocha" keep test results -->
+  <div id="mocha"></div>
+
+  <!-- run tests -->
+  <script>
+    mocha.run();
+  </script>
+</body>
+
+</html>
