@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<h1>Random number (1-10)</h1>
+
+		<script>
+			var min = 1;
+			var max = 10;
+			var n = prompt('Choose numbers', 10);
+			document.write("<h2>" + n + " random numbers</h2>");
+			for (var i = 0; i < n; i++) {
+				var rand = min - 0.5 + Math.random() * (max - min + 1);
+			    rand = Math.round(rand);
+			  	document.write(rand + "<br>");
+			}
+		</script>
+
+
+	</body>
+</html>
